@@ -8,8 +8,8 @@ updater = Updater(token = telegram_bot_token, use_context = True)
 dispatcher = updater.dispatcher
 
 def start(update, context):
-    chat_id = update.effetive_chat.id
+    chat_id = update.
     context.bot.send_message(chat_id=chat_id, text="Hello world")
 
 dispatcher.add_handler(CommandHandler("start", start))
-updater.start_polling()
+updater.start_polling() 
